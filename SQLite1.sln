@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite1.Android", "SQLite1\SQLite1.Android\SQLite1.Android.csproj", "{B184F515-39E7-4AE6-9260-D09967F8587B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite1", "SQLite1\SQLite1\SQLite1.csproj", "{A7AFB47C-080D-4062-9C90-683FCC1884F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B184F515-39E7-4AE6-9260-D09967F8587B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AFB47C-080D-4062-9C90-683FCC1884F1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8680F32B-DC9A-4B74-AE11-B7C3AA37170D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLite1.MainPage">
+
+    <StackLayout>
+        <Label Text="Username:"></Label>
+        <Entry x:Name="USername" 
+               WidthRequest="100"></Entry>
+        <Label Text="Password"></Label>
+        <Entry x:Name="PAssword" 
+               WidthRequest="100"></Entry>
+        <Button Text="UNOS" 
+                x:Name="UnosUBazu" 
+                Clicked="UnosUBazu_Clicked"></Button>
+        <Label Text="" 
+               x:Name="IME"></Label>
+        <Label Text=""
+               x:Name="PREZIME"></Label>
+    </StackLayout>
+
+</ContentPage>
