@@ -1,4 +1,4 @@
-﻿using SQLite1.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,12 +19,30 @@ namespace SQLite1
 
            
         }
-
-        private void UnosUBazu_Clicked(object sender, EventArgs e)
+        protected override async void OnAppearing()
         {
-            Services.UserServices.Dodavanje(USername.Text, PAssword.Text);
-            IME.Text = Services.UserServices.Ispis();
+            base.OnAppearing();
+            collectionView1.ItemsSource = await App.Database.GetPeopleAsync();
 
         }
+
+        async void OnButtonClicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(USername.Text))
+            {
+                await App.Database.SavePersonAsync(new Person
+                {
+                    Name = USername.Text,
+                    
+                });
+
+                USername.Text = string.Empty;
+                
+
+                collectionView1.ItemsSource = await App.Database.GetPeopleAsync();
+            }
+        }
+
+
     }
 }

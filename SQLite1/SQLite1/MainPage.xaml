@@ -5,18 +5,23 @@
 
     <StackLayout>
         <Label Text="Username:"></Label>
-        <Entry x:Name="USername" 
-               WidthRequest="100"></Entry>
-        <Label Text="Password"></Label>
-        <Entry x:Name="PAssword" 
-               WidthRequest="100"></Entry>
-        <Button Text="UNOS" 
-                x:Name="UnosUBazu" 
-                Clicked="UnosUBazu_Clicked"></Button>
-        <Label Text="" 
-               x:Name="IME"></Label>
-        <Label Text=""
-               x:Name="PREZIME"></Label>
+        <Entry x:Name="USername" ></Entry>
+       
+        <Button Text="Add to Database"
+                Clicked="OnButtonClicked" />
+        <CollectionView x:Name="collectionView1">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Name}"
+                               FontSize="Medium" />
+                        <Label Text="{Binding Subscribed}"
+                               TextColor="Silver"
+                               FontSize="Small" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </StackLayout>
 
 </ContentPage>
